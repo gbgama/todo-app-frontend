@@ -31,8 +31,7 @@ export default class Todo extends Component {
 
   refresh(description = "") {
     const search = description ? `?description__regex=${description}` : "";
-    Axios.get(`${URL}${search}`).then(resp => {
-      console.log(resp)
+    Axios.get(`${URL}${search}`).then(resp => {      
       this.setState({ ...this.state, description, list: resp.data.todos })
     }
     );
