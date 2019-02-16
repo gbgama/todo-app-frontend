@@ -2,6 +2,11 @@ body {
   background-color: antiquewhite
 }
 
+.about-text {
+  font-size: 16px;
+  
+}
+
 .logo {
   color: gray;
 }

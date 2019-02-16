@@ -7,7 +7,7 @@ export default props => (
                 <a href="#" className='navbar-brand'>
                 <span className='logo'>
                     <i className='fa fa-calendar-check-o' ></i>
-                    TodoApp
+                    Notes
                 </span>
                 </a>
             </div>
@@ -15,8 +15,8 @@ export default props => (
             <div id='navbar' className='navbar-collapse collapse'>
                 <ul className='nav navbar-nav'>
                 
-                    <li><a href="#/todos"><span className='navItem'>Tarefas</span></a></li>
-                    <li><a href="#/about"><span className='navItem'>Sobre</span></a></li>
+                    <li><a href="#/todos"><span className='navItem'>notes</span></a></li>
+                    <li><a href="#/about"><span className='navItem'>about</span></a></li>
                 
                 </ul>
             </div>

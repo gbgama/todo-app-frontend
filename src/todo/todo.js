@@ -14,7 +14,7 @@ export default class Todo extends Component {
     this.state = {
       description: "",
       list: [],
-      headerSmall: "Cadastro"
+      headerSmall: "List"
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -38,7 +38,7 @@ export default class Todo extends Component {
   }
 
   handleSearch() {
-    this.setState({ ...this.state, headerSmall: "Pesquisa" });
+    this.setState({ ...this.state, headerSmall: "Search" });
     this.refresh(this.state.description);
   }
 
@@ -47,13 +47,13 @@ export default class Todo extends Component {
   }
 
   handleAdd() {
-    this.setState({ ...this.state, headerSmall: "Cadastro" });
+    this.setState({ ...this.state, headerSmall: "List" });
     const description = this.state.description;
     Axios.post(URL, { description }).then(resp => this.refresh());
   }
 
   handleClear() {
-    this.setState({ ...this.state, headerSmall: "Cadastro" });
+    this.setState({ ...this.state, headerSmall: "List" });
     this.refresh();
   }
 
@@ -78,7 +78,7 @@ export default class Todo extends Component {
   render() {
     return (
       <div>
-        <PageHeader name="Tarefas" small={this.state.headerSmall} />
+        <PageHeader name="Notes" small={this.state.headerSmall} />
         <TodoForm
           description={this.state.description}
           handleChange={this.handleChange}

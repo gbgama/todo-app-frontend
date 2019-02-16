@@ -3,14 +3,9 @@ import PageHeader from '../template/pageHeader'
 
 export default props => (
     <div>
-        <PageHeader name='Sobre' small=''></PageHeader>
+        <PageHeader name='About' small=''></PageHeader>
 
-        <h2>Nossa História</h2>
-        <p>Lorem ipsum dolor sit amet...</p>
-        <h2>Missão e Visão</h2>
-        <p>Lorem ipsum dolor sit amet...</p>
-        <h2>Imprensa</h2>
-        <p>Lorem ipsum dolor sit amet...</p>
+        <p className="about-text">A simple React app for managing notes. The backend is provided by a Node.js restful api with MongoDB as the database.</p>
         
     </div>
 )

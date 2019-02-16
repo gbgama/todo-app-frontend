@@ -25,8 +25,8 @@ export default props => {
         <table className='table todo-list'>
             <thead>
                 <tr>
-                    <th style={{fontSize: 16}}>Descrição</th>
-                    <th style={{fontSize: 16}} className='tableActions'>Ações</th>
+                    <th style={{fontSize: 16}}>Description</th>
+                    <th style={{fontSize: 16}} className='tableActions'>Actions</th>
                 </tr>
             </thead>
             <tbody style={{backgroundColor: '#FCFCD9'}}>
